@@ -17,6 +17,15 @@ This repository contains two Jupyter notebooks focusing on different image class
 
 ## MNIST Classification
 
+### Model Development
+
+We develop three types of neural networks for classification:
+
+1. **Fully Connected Network**
+2. **Hybrid Network**
+3. **Fully Convolutional Network**
+
+
 ### Loading the Dataset
 We use PyTorch to load the MNIST dataset and create a DataLoader to handle batching and shuffling.
 
@@ -49,8 +58,27 @@ train_size = int(0.8 * len(train_val_data))
 val_size = len(train_val_data) - train_size
 train_data, val_data = random_split(train_val_data, [train_size, val_size])
 
-
 # Create DataLoader
 train_dataloader = DataLoader(train_data, 64, True)
 val_dataloader = DataLoader(val_data, shuffle=True)
 test_dataloader = DataLoader(test_data, shuffle=True)
+```
+
+
+## Datasets
+
+- [MNIST Dataset](http://yann.lecun.com/exdb/mnist/) from PyTorch
+- [Dog vs Cat Dataset](https://www.kaggle.com/c/dogs-vs-cats) from Kaggle
+
+
+## Clone the repository:
+
+```
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+```
+
+
+
+
+
