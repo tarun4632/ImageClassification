@@ -77,8 +77,9 @@ test_dataloader = DataLoader(test_data, shuffle=True)
 git clone https://github.com/yourusername/your-repo-name.git
 cd your-repo-name
 ```
-
-
+```
+pip install -r requirements.txt
+    ```
 
 
 
